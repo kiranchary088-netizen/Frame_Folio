@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FrameFolio · ClickClash Contest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky top bar -->
+  <header>
+    <div class="bar">
+      <div class="logo">Frame<b>Folio</b></div>
+      <nav id="nav" aria-label="Main menu"></nav>
+      <div id="userbox"></div>
+      <button class="icon" id="theme" aria-label="Toggle dark/light theme">🌓</button>
+    </div>
+  </header>
+
+  <!-- All pages are rendered here -->
+  <main id="view"></main>
+
+  <!-- Full-screen photo viewer -->
+  <dialog id="lightbox" aria-label="Photo viewer">
+    <div class="lb">
+      <div class="stage" id="stage">
+        <button class="lbtn" id="lbClose" aria-label="Close (Esc)">✕</button>
+        <button class="lbtn" id="lbPrev" aria-label="Previous photo (Left arrow)">‹</button>
+        <img id="lbImg" alt="">
+        <button class="lbtn" id="lbNext" aria-label="Next photo (Right arrow)">›</button>
+        <div class="counter" id="lbCount"></div>
+      </div>
+      <aside class="side" id="lbSide"></aside>
+    </div>
+  </dialog>
+
+  <!-- Modular JavaScript (ES modules) -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
